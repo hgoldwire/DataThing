@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import './App.css';
-// import 'react-grid-layout/css/styles.css';
-// import 'react-resizable/css/styles.css';
 import {Scraps} from './Scraps';
 import {UserActivities} from './UserActivities';
 import {UserEvents} from './UserEvents';
+// import 'react-grid-layout/css/styles.css';
+// import 'react-resizable/css/styles.css';
 // import GridLayout from 'react-grid-layout';
 
 

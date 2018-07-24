@@ -34,7 +34,7 @@ object Codecs {
 
   implicit def activityToJson: Encoder[UserActivity] = new Encoder[UserActivity] {
     override def apply(ua: UserActivity): Json = Map(
-      "dt" -> ua.dtTs.asJson,
+      "dtTs" -> ua.dtTs.asJson,
       "activityType" -> ua.activityType.value.asJson,
       "billingType" -> ua.billingType.value.asJson,
       "platform" -> ua.platform.value.asJson,

@@ -35,6 +35,12 @@ export class Scraps extends Component {
                     columns={this.columns}
                     showPagination={false}
                     defaultPageSize={Math.min(this.props.scraps.length, 1000)}
+                    defaultSorted={[
+                        {
+                            id: "dt",
+                            desc: false
+                        }
+                    ]}
                     style={{
                         height: "400px",
                         width: "1200px",

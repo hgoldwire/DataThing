@@ -6,8 +6,8 @@ export class UserActivities extends Component {
 
     columns = [
         {
-            Header: 'dt',
-            accessor: 'dt',
+            Header: 'dtTs',
+            accessor: 'dtTs',
             width: 200
         }, {
             Header: 'activityType',
@@ -20,7 +20,7 @@ export class UserActivities extends Component {
         }, {
             accessor: 'platform', // Required because our accessor is not a string
             Header: 'platform',
-            width: 200
+            width: 100
         },
         {
             accessor: 'payload', // Required because our accessor is not a string
@@ -39,6 +39,12 @@ export class UserActivities extends Component {
                     columns={this.columns}
                     showPagination={false}
                     defaultPageSize={Math.min(this.props.activities.length, 1000)}
+                    defaultSorted={[
+                        {
+                            id: "dtTs",
+                            desc: false
+                        }
+                    ]}
                     style={{
                         height: "400px" // This will force the table body to overflow and scroll, since there is not enough room
                     }}

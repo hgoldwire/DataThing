@@ -50,6 +50,12 @@ export class UserEvents extends Component {
                     columns={this.columns}
                     showPagination={false}
                     defaultPageSize={Math.min(this.props.events.length, 1000)}
+                    defaultSorted={[
+                        {
+                            id: "event_date",
+                            desc: false
+                        }
+                    ]}
                     minRows={0}
                     style={{
                          height: "400px" // This will force the table body to overflow and scroll, since there is not enough room
