@@ -14,7 +14,7 @@ object HelloWorldServer extends StreamApp[IO] {
 
 object ServerStream {
 
-  def helloWorldService[F[_]: Effect] = new DataThingService[F].service
+  def helloWorldService[F[_]: Effect] = new DataThingService[F].corsService
 
   def stream[F[_]: Effect](implicit ec: ExecutionContext) =
     BlazeBuilder[F]
