@@ -8,34 +8,39 @@ export class UserEvents extends Component {
     columns = [
         {
             Header: 'attributed_date',
-            accessor: 'attributed_date' // String-based value accessors!
+            accessor: 'attributed_date',
+            width: 185
         }, {
             Header: 'billing_type',
             accessor: 'billing_type',
         }, {
-            accessor: 'platform', // Required because our accessor is not a string
+            accessor: 'platform',
             Header: 'platform',
         }, {
-            accessor: 'partner', // Required because our accessor is not a string
+            accessor: 'partner',
             Header: 'partner',
+            width: 60
         }, {
-            accessor: 'event', // Required because our accessor is not a string
+            accessor: 'event',
             Header: 'event',
+            width: 160
         }
         , {
-            accessor: 'event_date', // Required because our accessor is not a string
+            accessor: 'event_date',
             Header: 'event_date',
+            width: 180
         }, {
-            accessor: 'dt', // Required because our accessor is not a string
+            accessor: 'dt',
             Header: 'dt',
         }, {
-            accessor: 'product_id', // Required because our accessor is not a string
+            accessor: 'product_id',
             Header: 'product_id',
+            width: 50
         }, {
-            accessor: 'subscription_length', // Required because our accessor is not a string
+            accessor: 'subscription_length',
             Header: 'subscription_length',
         }, {
-            accessor: 'add_on_name', // Required because our accessor is not a string
+            accessor: 'add_on_name',
             Header: 'add_on_name',
         }
     ];
